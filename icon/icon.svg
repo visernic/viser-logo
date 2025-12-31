@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 600 600">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="100%" height="100%" viewBox="0 0 600 600">
 <desc>visernic.com</desc>
 <defs>
-  <style>
-    /* Default Light Mode */
-    .logo-bg {
-      fill: rgb(251,251,251);
-      stroke: rgb(34,181,19);
-      stroke-width: 2px;
-    }
-    .logo-shape {
-      fill: rgb(4,182,4);
-      stroke: none;
-    }
-
-    /* Auto Dark Mode */
-    @media (prefers-color-scheme: dark) {
-      .logo-bg {
-        fill: #1a1a1a; /* Changes background to dark gray */
-        stroke: rgb(34,181,19); /* Keeps the green border */
-      }
-      .logo-shape {
-        fill: rgb(4,182,4); /* Keeps the logo shape green */
-      }
-    }
-  </style>
+    <style>
+        /* Default Styles (Light Mode) */
+        .visernic-circle {
+            stroke: rgb(34, 181, 19); /* Green Border */
+            fill: rgb(251, 251, 251); /* White Background */
+            stroke-width: 5px; /* Border thickness */
+        }
+        
+        /* Dark Mode Styles */
+        @media (prefers-color-scheme: dark) {
+            .visernic-circle {
+                stroke: #ffffff; /* White Border */
+                fill: #1a1a1a;   /* Dark Background (to make white border visible) */
+            }
+        }
+    </style>
 </defs>
 
-<circle class="logo-bg" transform="translate(0,0)" cx="300.6111" cy="300.1985" r="280" vector-effect="non-scaling-stroke"/>
+<circle class="visernic-circle" transform="translate(0,0)" cx="300.6111" cy="300.1985" r="280" vector-effect="non-scaling-stroke"/>
 
-<path class="logo-shape" transform="translate(0,0)" paint-order="stroke" stroke-linecap="round" d="M171.0034 226.4755L205.2656 292.5329 361.9796 237.3033 172.909 330.1245 123.3 432.9265 236.1356 351.3815 288.6209 446.5055 499.1434 153.8244 171.0034 226.4755"/>
-
+<path transform="translate(0,0)" style="stroke: rgb(255,255,255); stroke-opacity: 0; stroke-linecap: round; fill: rgb(4,182,4)" paint-order="stroke" stroke-linecap="round" d="M171.0034 226.4755L205.2656 292.5329 361.9796 237.3033 172.909 330.1245 123.3 432.9265 236.1356 351.3815 288.6209 446.5055 499.1434 153.8244 171.0034 226.4755"/>
 </svg>
