@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <style>
+      /* Default Light Mode Colors */
+      .logo-bg {
+        fill: rgb(251, 251, 251);
+        stroke: rgb(19, 181, 8);
+      }
+      .logo-main-text {
+        fill: rgb(16, 25, 16);
+      }
+      .logo-accent {
+        fill: rgb(4, 182, 4);
+      }
+
+      /* Dark Mode Auto Detection */
+      @media (prefers-color-scheme: dark) {
+        .logo-bg {
+          fill: #1a1a1a; /* Dark background for dark mode */
+          stroke: rgb(19, 181, 8); /* Stroke remains green */
+        }
+        .logo-main-text {
+          fill: #ffffff; /* Text becomes white in dark mode */
+        }
+        .logo-accent {
+          fill: rgb(4, 182, 4); /* Accent remains green */
+        }
+      }
+    </style>
+  </defs>
+
+  <circle class="logo-bg" transform="translate(0,0)" style="stroke-width: 2;" cx="301.1111" cy="300.6985" r="280"/>
+  
+  <path class="logo-main-text" transform="translate(0,0)" style="stroke-width: 0;" vector-effect="non-scaling-stroke" paint-order="stroke" stroke-linecap="round" d="M333.6303 431.4656L266.5023 431.4656 166.5 169 242.7272 169 300.081 332.6961 357.1706 169 433.6326 169 333.6303 431.4656Z"/>
+  
+  <path class="logo-accent" transform="translate(0,0)" style="stroke: rgb(255,255,255); stroke-opacity: 0; stroke-linecap: round;" paint-order="stroke" stroke-linecap="round" d="M271.1642 236.7308L286.8094 266.9089 358.4023 241.6761 272.0252 284.0828 249.3542 331.0481 300.9056 293.7936 324.8726 337.2505 421.0671 203.5379 271.1642 236.7308"/>
+</svg>
